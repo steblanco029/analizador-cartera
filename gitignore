@@ -1,0 +1,20 @@
+# Entorno virtual (no se sube nunca: es pesado y se recrea con requirements.txt)
+venv/
+.venv/
+env/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Archivos que GENERA el programa al ejecutarse (no son código fuente)
+analisis_cartera.xlsx
+grafico_precios.png
+
+# Configuración personal del editor
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
