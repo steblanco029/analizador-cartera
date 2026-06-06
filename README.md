@@ -74,24 +74,24 @@ Un Excel (`analisis_cartera.xlsx`) con hojas para precios, datos normalizados, r
 
 ---
 
-## ⚠️ Limitaciones conocidas
+## Limitaciones conocidas
 
 Este proyecto es una herramienta de aprendizaje, no de uso profesional. Conviene tener en cuenta que:
 
 - Los datos provienen de **Yahoo Finance gratuito**, que no tiene la calidad ni la fiabilidad de un proveedor institucional (Bloomberg, Refinitiv).
-- La cartera **mezcla activos en USD y EUR sin conversión de divisa**, por lo que los valores agregados son aproximados.
-- Los múltiplos sectoriales de **Damodaran son del mercado estadounidense**, usados como referencia aproximada para valores europeos (que suelen cotizar más bajos).
-- El **backtest** cubre solo 1 año y **no incluye comisiones ni deslizamiento** (*slippage*), por lo que sus resultados son optimistas.
-- El **DCF es muy sensible a los supuestos** (crecimiento, WACC) y **no aplica a bancos ni SOCIMIs** (en esos casos devuelve "no disponible", que es el comportamiento correcto).
-- El **VaR paramétrico asume normalidad** de los retornos, por lo que tiende a infravalorar los eventos extremos.
+- La cartera mezcla activos en USD y EUR sin conversión de divisa, por lo que los valores agregados son aproximados.
+- Los múltiplos sectoriales de Damodaran son del mercado estadounidense, usados como referencia aproximada para valores europeos (que suelen cotizar más bajos).
+- El backtest cubre solo 1 año y no incluye comisiones ni deslizamiento , por lo que sus resultados son optimistas.
+- El DCF es muy sensible a los supuestos (crecimiento, WACC) y no aplica a bancos ni SOCIMIs (en esos casos devuelve "no disponible", que es el comportamiento correcto).
+- El VaR paramétrico asume normalidad de los retornos, por lo que tiende a infravalorar los eventos extremos.
 
-Estas limitaciones no son un fallo, sino parte del análisis: entender qué no captura un modelo es tan importante como el modelo en sí.
+
 
 ---
 
-## 👤 Autor
+##  Autora
 
-**[Tu Nombre]** — Estudiante de 4º de ADE, Universidad Autónoma de Madrid.
+**Stephanie Blanco Jones** — Estudiante de 4º de ADE, Universidad Autónoma de Madrid.
 
-- LinkedIn: [tu perfil de LinkedIn]
-- GitHub: [@TU-USUARIO](https://github.com/TU-USUARIO)
+- LinkedIn: [https://www.linkedin.com/in/stephanie-blanco-jones-1555a6244/]
+- GitHub: [@steblanco029](https://github.com/steblanco029)
