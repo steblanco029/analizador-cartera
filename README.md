@@ -85,7 +85,27 @@ Este proyecto es una herramienta de aprendizaje, no de uso profesional. Conviene
 - El DCF es muy sensible a los supuestos (crecimiento, WACC) y no aplica a bancos ni SOCIMIs (en esos casos devuelve "no disponible", que es el comportamiento correcto).
 - El VaR paramétrico asume normalidad de los retornos, por lo que tiende a infravalorar los eventos extremos.
 
+## Dashboard Interactivo
 
+He incluido en el proyecto un Dashboard interativo contruido con Streamlit (`app.py`) que permite analizar cualquier acción de forma visual e interactiva, sin necesidad de tocar el código.
+**Pruébalo!** [wallet-steph.streamlit.app](https://wallet-steph.streamlit.app)
+
+Debes escribir el ticker de una acción (por ejemplo `AAPL`, `MSFT`, o `SAN.MC` para valores españoles) y el dashboard descarga automáticamente los precios del último año desde Yahoo Finance y calcula al instante sus principales métricas de riesgo y rentabilidad:
+
+- **Rentabilidad y volatilidad anualizadas**: cuánto ha rendido la acción y con cuánto riesgo.
+- **Ratio de Sharpe**: la rentabilidad ajustada al riesgo asumido.
+- **Beta frente al S&P 500 (modelo CAPM)**: cuánto se mueve la acción respecto al mercado.
+- **Máximo drawdown**: la mayor caída desde un máximo previo, es decir, lo peor que habría sufrido un inversor.
+- **VaR al 95% diario**: la pérdida máxima esperable en un día normal de mercado.
+
+Además, muestra dos gráficos interactivos: la evolución del precio de la acción durante el último año y su comportamiento frente al S&P 500 en base 100.
+
+### Cómo ejecutarlo en local
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ---
 
